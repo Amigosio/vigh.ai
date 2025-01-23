@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vighnaharta Pvt. Ltd. | Fintech Services</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fc;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e3a8a;
+      color: #fff;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #0f172a;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #1e3a8a;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      display: none; /* Initially hidden for dropdown effect */
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      color: #1e3a8a;
+      margin-bottom: 10px;
+    }
+
+    .promoters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .founder {
+      text-align: center;
+      margin: 20px;
+      max-width: 300px;
+    }
+
+    .founder-photo {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .founder h3 {
+      margin-top: 10px;
+      color: #1e3a8a;
+      font-size: 1.2rem;
+    }
+
+    .founder p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #1e3a8a;
+      color: #fff;
+      padding: 10px;
+      position: relative;
+      bottom: 0;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vighnaharta Pvt. Ltd.</h1>
+    <p>Empowering Fintech Solutions with AI and Expertise</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showSection('about')">About Us</a>
+    <a href="#" onclick="showSection('services')">Services</a>
+    <a href="#" onclick="showSection('investor-relations')">Investor Relations</a>
+  </nav>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Vighnaharta Pvt. Ltd. was founded in 2024 by visionary entrepreneurs and a dynamic couple, Amogh Patil and Jhanvi Patil. 
+      With extensive experience in the advisory industry, they launched their venture to revolutionize fintech services in India. 
+      Based in Goregaon West, Mumbai, we specialize in cutting-edge AI-based stock analysis, mutual fund investments, financial advisory, 
+      PMS, AIF, and company research. 
+    </p>
+    <p>
+      Our goal is to provide modern, data-driven solutions for our clients and establish a leading name in fintech innovation.
+    </p>
+
+    <!-- Promoters Section -->
+    <div class="promoters">
+      <h2>Our Founders</h2>
+      <div class="founder">
+        <img src="amogh-patil.jpg" alt="Amogh Patil" class="founder-photo">
+        <h3>Amogh Patil</h3>
+        <p>Co-founder & CEO<br>Amogh has years of experience in financial advisory and equity markets, helping clients make data-driven investment decisions.</p>
+      </div>
+      <div class="founder">
+        <img src="jhanvi-patil.jpg" alt="Jhanvi Patil" class="founder-photo">
+        <h3>Jhanvi Patil</h3>
+        <p>Co-founder & COO<br>Jhanvi specializes in mutual funds, PMS, and AIFs, ensuring innovative financial solutions for a wide range of investors.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>AI-Based Stock Analysis</li>
+      <li>Mutual Fund Investments</li>
+      <li>Financial Advisory</li>
+      <li>Portfolio Management Services (PMS)</li>
+      <li>Alternative Investment Funds (AIF)</li>
+      <li>Company Research</li>
+      <li>Forex Trading Assistance</li>
+    </ul>
+  </section>
+
+  <!-- Investor Relations Section -->
+  <section id="investor-relations">
+    <h2>Investor Relations</h2>
+    <p>Welcome to the Investor Relations page. Here, you can find key financial documents and reports:</p>
+    <ul>
+      <li><a href="#">Annual Reports</a></li>
+      <li><a href="#">Financial Statements</a></li>
+      <li><a href="#">Company Updates</a></li>
+    </ul>
+    <p>For further inquiries, please contact us.</p>
+  </section>
+
+  <footer>
+    <p>Contact Us: +91 7387160790 | Email: <a href="mailto:amoghsp77@gmail.com" style="color: #fff;">amoghsp77@gmail.com</a></p>
+    <p>Address: 76, IT Park, Goregaon West, Mumbai-400097</p>
+    <p>© 2024 Vighnaharta Pvt. Ltd. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showSection(sectionId) {
+      // Hide all sections
+      const sections = document.querySelectorAll("section");
+      sections.forEach(section => section.classList.remove("active"));
+
+      // Show the selected section
+      const selectedSection = document.getElementById(sectionId);
+      if (selectedSection) {
+        selectedSection.classList.add("active");
+      }
+    }
+  </script>
+</body>
+</html>
